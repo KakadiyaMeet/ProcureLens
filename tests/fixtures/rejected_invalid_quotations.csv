@@ -1,0 +1,7 @@
+Row Index,supplierName,productName,quantity,unitPrice,gstPercentage,deliveryCharges,deliveryDays,paymentTerms,qualityRating,organizationId,Error Details
+2,=cmd|' /C calc',Precision Bolts,10,15.00,18,10.00,3,Net 30,4.5,org_test123,"[CSV_INJECTION] supplierName: Field ""supplierName"" starts with a formula-injection character (""=""). Possible CSV injection attempt."
+3,Gamma Tech,<script>alert(1)</script>,5,100.00,18,15.00,4,Net 30,4.0,org_test123,"[XSS_DETECTED] productName: Field ""productName"" contains HTML tags or dangerous protocol — possible XSS."
+4,Delta Corp,Hydraulic Pump,2,-450.00,18,30.00,5,Net 30,4.2,org_test123,"[CSV_INJECTION] unitPrice: Field ""unitPrice"" starts with a formula-injection character (""-""). Possible CSV injection attempt. | [NEGATIVE_VALUE] unitPrice: ""unitPrice"" must be ≥ 0; got -450.0"
+5,,Electric Motor,1,,18,20.00,2,Net 30,4.0,org_test123,"[MISSING_REQUIRED] supplierName: ""supplierName"" is required but was empty | [MISSING_REQUIRED] unitPrice: ""unitPrice"" is required but was empty"
+6,Epsilon LLC,Air Compressor,0,200.00,18,40.00,6,Net 30,4.1,org_test123,"[NEGATIVE_VALUE] quantity: ""quantity"" must be > 0; got 0"
+7,CrossOrg Supplier,Standard Valves,10,50.00,18,20.00,4,Net 30,4.0,org_foreign999,"[CROSS_ORG_VIOLATION] organizationId: Record organizationId ""org_foreign999"" does not match active org ""org_test123"". Cross-organization import rejected."

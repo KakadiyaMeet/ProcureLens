@@ -1,0 +1,6 @@
+supplierName,productName,quantity,unitPrice,gstPercentage,deliveryCharges,deliveryDays,paymentTerms,qualityRating,organizationId
+Acme Industrial,Industrial Ball Bearings,100,25.50,18,50.00,5,Net 30,4.8,org_test123
+Beta Supplies,Heavy Duty Grease,50,12.00,18,25.00,3,Net 15,4.5,org_test123
+Apex Dynamics,Precision Steel Shafts,20,150.00,12,75.00,7,Immediate,4.9,org_test123
+Omni Global,Stainless Steel Fasteners,500,2.25,18,15.00,4,Net 45,4.2,org_test123
+Titan Tools,Pneumatic Impact Wrench,10,85.00,18,30.00,2,Net 30,4.7,org_test123
